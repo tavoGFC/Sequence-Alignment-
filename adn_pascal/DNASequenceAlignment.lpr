@@ -1,0 +1,5 @@
+program DNASequenceAlignment;
+
+begin
+end.
+
