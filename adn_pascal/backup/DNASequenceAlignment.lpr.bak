@@ -23,8 +23,8 @@ begin
   columnsM := Length(sequence1);
 
 
-  WriteLn(sequence2, '--cantidad de filas: ', rowsM);
-  WriteLn(sequence1, '--cantidad de columnas: ', columnsM);
+  WriteLn(sequence1, '--cantidad de filas: ', rowsM);
+  WriteLn(sequence2, '--cantidad de columnas: ', columnsM);
   generateMatrix(rowsM,columnsM);
   for iMM:= 0 to (rowsM) do
   begin

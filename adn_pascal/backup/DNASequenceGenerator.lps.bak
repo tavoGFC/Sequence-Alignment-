@@ -4,25 +4,40 @@
     <PathDelim Value="\"/>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="2">
+    <Units Count="4">
       <Unit0>
         <Filename Value="DNASequenceGenerator.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="8"/>
-        <CursorPos X="29" Y="28"/>
-        <UsageCount Value="22"/>
+        <TopLine Value="3"/>
+        <CursorPos X="18" Y="20"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="C:\lazarus\fpc\3.0.2\source\rtl\inc\systemh.inc"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="784"/>
-        <CursorPos X="33" Y="793"/>
+        <TopLine Value="900"/>
+        <CursorPos X="11" Y="795"/>
         <UsageCount Value="10"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="dnasequencegeneratorunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DNASequenceGeneratorUnit"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="23"/>
+        <CursorPos X="62" Y="25"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="T:\2017\I S 2017\CE - 3104\Tutorias\Pascal practica 1\Practica 1\pract1.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit3>
     </Units>
-    <JumpHistory Count="11" HistoryIndex="10">
+    <JumpHistory Count="21" HistoryIndex="20">
       <Position1>
         <Filename Value="DNASequenceGenerator.lpr"/>
         <Caret Line="15" Column="15" TopLine="13"/>
@@ -67,6 +82,46 @@
         <Filename Value="DNASequenceGenerator.lpr"/>
         <Caret Line="22" Column="57" TopLine="8"/>
       </Position11>
+      <Position12>
+        <Filename Value="DNASequenceGenerator.lpr"/>
+        <Caret Line="4" Column="7"/>
+      </Position12>
+      <Position13>
+        <Filename Value="DNASequenceGenerator.lpr"/>
+        <Caret Line="5" Column="3"/>
+      </Position13>
+      <Position14>
+        <Filename Value="DNASequenceGenerator.lpr"/>
+        <Caret Line="16" Column="73" TopLine="9"/>
+      </Position14>
+      <Position15>
+        <Filename Value="dnasequencegeneratorunit.pas"/>
+        <Caret Line="27" Column="65"/>
+      </Position15>
+      <Position16>
+        <Filename Value="DNASequenceGenerator.lpr"/>
+        <Caret Line="21" Column="10"/>
+      </Position16>
+      <Position17>
+        <Filename Value="DNASequenceGenerator.lpr"/>
+        <Caret Line="12" Column="24"/>
+      </Position17>
+      <Position18>
+        <Filename Value="DNASequenceGenerator.lpr"/>
+        <Caret Line="19" Column="11"/>
+      </Position18>
+      <Position19>
+        <Filename Value="DNASequenceGenerator.lpr"/>
+        <Caret Line="16" Column="29" TopLine="8"/>
+      </Position19>
+      <Position20>
+        <Filename Value="DNASequenceGenerator.lpr"/>
+        <Caret Line="11" Column="14"/>
+      </Position20>
+      <Position21>
+        <Filename Value="DNASequenceGenerator.lpr"/>
+        <Caret Line="3" Column="42"/>
+      </Position21>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

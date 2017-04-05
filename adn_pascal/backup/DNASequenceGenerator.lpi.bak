@@ -31,16 +31,11 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <Units Count="2">
+    <Units Count="1">
       <Unit0>
         <Filename Value="DNASequenceGenerator.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit0>
-      <Unit1>
-        <Filename Value="dnasequencegeneratorunit.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="DNASequenceGeneratorUnit"/>
-      </Unit1>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
