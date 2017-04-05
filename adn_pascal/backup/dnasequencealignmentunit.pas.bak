@@ -117,18 +117,18 @@ var
   i,j,iSM,jSM: Integer;
 begin
   WriteLn('creando la alineacion de secuencias');
-  i:= (rows+1); //sequecen2
-  j:= (columns+1); //sequence1
+  i:= (rows); //sequecen2
+  j:= (columns); //sequence1
   while ( (i > 0) and (j > 0) ) do
   begin
-        nucleotideI:= sequence2[i-1];
+        nucleotideI:= sequence2[i];
           case (nucleotideI) of
           'A' : iSM:= A;
           'G' : iSM:= G;
           'C' : iSM:= C;
           'T' : iSM:= T;
           end;
-          nucleotideJ:= sequence1[j-1];
+          nucleotideJ:= sequence1[j];
           case (nucleotideJ) of
           'A' : jSM:= A;
           'G' : jSM:= G;
@@ -138,28 +138,44 @@ begin
         match:= matrix[i-1][j-1] + similarityMatrix[iSM][jSM];
         up:= matrix[i-1][j] + gap;
         left:= matrix[i][j-1] + gap;
-
-        if ( (i > 0) and (j >0) and (matrix[i][j] = match) ) then
-            begin
-             AppendStr(result1, nucleotideI);
-             AppendStr(result2, nucleotideJ);
-             i:= i-1;
-             j:= j-1;
-            end
-       else if( (i > 0) and (up = matrix[i][j]) ) then
+        Write(' nucleotido en i-1: ', nucleotideI, ' |nucleotido en j-1: ', nucleotideJ,
+        ' |valor de match: ',match, ' |valor de up: ', up, ' |valor de left: ', left,
+        ' |valor actual en [i][j]: ', matrix[i][j]);
+        if(left = matrix[i][j]) then
            begin
-             AppendStr(result2, nucleotideI);
              AppendStr(result1, '-');
+             AppendStr(result2, nucleotideJ);
+             j:= j-1;
+           end
+       else if(up = matrix[i][j]) then
+           begin
+             AppendStr(result1, nucleotideI);
+             AppendStr(result2, '-');
              i:= i-1;
            end
        else
            begin
-             AppendStr(result2, '-');
+             AppendStr(result2, nucleotideI);
              AppendStr(result1, nucleotideJ);
+             i:= i-1;
              j:= j-1;
            end;
   end;
+  while (i > 0) do
+  begin
+       nucleotideI:= sequence2[i-1];
+       AppendStr(result2, nucleotideI);
+       AppendStr(result1, '-');
+       i:= i-1;
+  end;
 
+  while (j > 0) do
+  begin
+       nucleotideJ:= sequence1[j-1];
+       AppendStr(result2, '-');
+       AppendStr(result1, nucleotideJ);
+       j:= j-1;
+  end;
   WriteLn('La alineacion Global se ha realizado: ');
   WriteLn(ReverseString(result2));
   WriteLn(ReverseString(result1));

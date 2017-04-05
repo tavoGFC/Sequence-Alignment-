@@ -117,18 +117,18 @@ var
   i,j,iSM,jSM: Integer;
 begin
   WriteLn('creando la alineacion de secuencias');
-  i:= (rows+1); //sequecen2
-  j:= (columns+1); //sequence1
+  i:= (rows); //sequecen2
+  j:= (columns); //sequence1
   while ( (i > 0) and (j > 0) ) do
   begin
-        nucleotideI:= sequence2[i-1];
+        nucleotideI:= sequence2[i];
           case (nucleotideI) of
           'A' : iSM:= A;
           'G' : iSM:= G;
           'C' : iSM:= C;
           'T' : iSM:= T;
           end;
-          nucleotideJ:= sequence1[j-1];
+          nucleotideJ:= sequence1[j];
           case (nucleotideJ) of
           'A' : jSM:= A;
           'G' : jSM:= G;
